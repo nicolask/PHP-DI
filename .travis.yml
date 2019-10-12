@@ -17,7 +17,8 @@ matrix:
   allow_failures:
     - php: nightly
   include:
-    - php: 7.1
+    - name: "Lowest Dependencies"
+      php: 7.1
       env: dependencies=lowest
 
 cache:
